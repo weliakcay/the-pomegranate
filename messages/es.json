@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "La Granada — La Fruta del Tiempo",
+    "description": "Un viaje cinematográfico y multilingüe por la ciencia, el arte y la mitología de la granada."
+  },
+  "nav": {
+    "home": "Inicio",
+    "art": "Arte",
+    "science": "Ciencia",
+    "blog": "Diario",
+    "about": "Acerca de"
+  },
+  "hero": {
+    "kicker": "Edición 01",
+    "title": "THE POMEGRANATE",
+    "subtitle": "La fruta del tiempo.",
+    "cta": "Entrar al núcleo"
+  },
+  "sections": {
+    "featureKicker": "Capas",
+    "featureTitle": "Capas de asombro",
+    "featureSubtitle": "Desde la mitología hasta la radiancia molecular.",
+    "scienceKicker": "Ciencia",
+    "scienceTitle": "Destellos científicos",
+    "scienceSubtitle": "Extractos revisados por pares con una edición minimalista.",
+    "artKicker": "Galería",
+    "artTitle": "Adelanto de la galería",
+    "artSubtitle": "Observa la granada a través de medios contemporáneos.",
+    "manifestoKicker": "Manifiesto",
+    "manifestoTitle": "Cada semilla, un universo.",
+    "manifestoBody": "Honramos la artesanía lenta de la naturaleza con tipografía serena y transiciones cinemáticas.",
+    "journalKicker": "Diario",
+    "journalTitle": "Notas del núcleo",
+    "journalSubtitle": "Bitácoras de diseño, resúmenes de investigación y reflexiones del estudio.",
+    "metricPolyphenols": "Impulso de polifenoles",
+    "metricPolyphenolsDescription": "Hasta un 326 % más de capacidad antioxidante frente a bebidas de control.",
+    "metricAntioxidant": "Vida media antioxidante",
+    "metricAntioxidantDescription": "18 horas de soporte plasmático tras la ingesta sincronizada.",
+    "metricStudies": "Estudios indexados",
+    "metricStudiesDescription": "Publicaciones revisadas que alimentan nuestra biblioteca."
+  },
+  "featureCards": {
+    "punicalagin": {
+      "label": "Polifenoles",
+      "title": "Reservorios de punicalaginas",
+      "description": "Antioxidantes concentrados orbitan cada semilla y alimentan la cronología hero."
+    },
+    "mythos": {
+      "label": "Mito",
+      "title": "Mitos a través de los imperios",
+      "description": "De Perséfone a los keynotes de producto, respetamos el simbolismo ritual de la fruta."
+    },
+    "chrono": {
+      "label": "Crono",
+      "title": "Precisión crononutricional",
+      "description": "ScrollTrigger alinea cada revelación con el ritmo circadiano."
+    }
+  },
+  "cta": {
+    "readScience": "Leer estudio",
+    "viewGallery": "Ver galería",
+    "readJournal": "Leer diario"
+  },
+  "art": {
+    "metaTitle": "Arte y galería",
+    "metaDescription": "Una cuadrícula curada de estudios de granada en IA, fotografía y 3D.",
+    "kicker": "Galería",
+    "headline": "La forma de la granada",
+    "lede": "Miniaturas minimalistas, lightbox fluida y metadatos preparados para headless.",
+    "filters": {
+      "all": "Todas",
+      "ai": "Shot on AI",
+      "photography": "Fotografía",
+      "threeD": "3D"
+    },
+    "lightbox": {
+      "open": "Abrir obra",
+      "close": "Cerrar lightbox",
+      "previous": "Anterior",
+      "next": "Siguiente"
+    }
+  },
+  "science": {
+    "metaLabel": "Ciencia e investigación",
+    "kicker": "Investigación",
+    "headline": "Ciencia e investigación",
+    "lede": "Crononutrición, resiliencia cardiovascular y defensa dérmica destiladas con claridad.",
+    "references": "Referencias",
+    "toc": "En esta página",
+    "breadcrumbLabel": "Ruta"
+  },
+  "blog": {
+    "metaTitle": "Diario",
+    "metaDescription": "Notas de diseño, resúmenes de investigación y registros de lanzamiento.",
+    "kicker": "Diario",
+    "headline": "Diario",
+    "lede": "Reflexiones breves sobre el oficio, la ciencia y las decisiones de producto.",
+    "shareLabel": "Compartir",
+    "backToList": "Volver al diario"
+  },
+  "about": {
+    "metaTitle": "Acerca de — The Pomegranate",
+    "metaDescription": "Filosofía, créditos y licencias de The Pomegranate.",
+    "kicker": "Acerca de",
+    "headline": "Diseño como ritual",
+    "lede": "La granada es paciente; nuestro escenario digital sigue su ritmo.",
+    "philosophyTitle": "Filosofía",
+    "philosophyBody1": "Unimos precisión estilo Apple con narrativas lentas para celebrar la fruta del tiempo.",
+    "philosophyBody2": "Preparado para headless, el sistema adopta tus datos sin perder la esencia.",
+    "experienceTitle": "Experiencia",
+    "experienceBody1": "Lenis suaviza el desplazamiento, GSAP coreografía cada sección y Framer Motion añade matices.",
+    "experienceBullet1": "Hero 3D con react-three-fiber",
+    "experienceBullet2": "Secciones adhesivas inspiradas en lanzamientos de producto",
+    "experienceBullet3": "Artículos y diarios en MDX",
+    "accessibilityTitle": "Accesibilidad",
+    "accessibilityBody1": "La elegancia debe incluir. Implementamos landmarks, estados de foco y alternativas sin movimiento.",
+    "accessibilityBullet1": "Respeto por prefers-reduced-motion",
+    "accessibilityBullet2": "Textos alternativos descriptivos",
+    "accessibilityBullet3": "Tipografía de alto contraste",
+    "creditsTitle": "Créditos",
+    "creditsBody": "Un equipo multidisciplinario guía la experiencia:",
+    "creditCreativeDirector": "Director creativo",
+    "creditCreativeDirectorName": "Veli Akçay",
+    "creditScienceEditor": "Editora científica",
+    "creditScienceEditorName": "Dra. Leyla Karaman",
+    "credit3DLead": "Líder 3D",
+    "credit3DLeadName": "Studio Nar",
+    "licensingTitle": "Licencias",
+    "licensingBody1": "Código MIT, contenido demo CC BY-NC 4.0.",
+    "licensingBody2": "Reemplaza los placeholders con tus recursos finales.",
+    "nextTitle": "Próximo",
+    "nextBody": "Conecta tu CMS, ajusta las animaciones y despliega en Vercel."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "language": "Idioma",
+    "languageShort": "Idioma",
+    "follow": "Síguenos"
+  },
+  "notFound": {
+    "kicker": "404",
+    "headline": "La página aún no ha germinado.",
+    "body": "Tal vez la semilla vive en otra temporada. Regresa al núcleo.",
+    "cta": "Volver al inicio"
+  }
+}

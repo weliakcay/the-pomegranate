@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "The Pomegranate — The Fruit of Time",
+    "description": "A cinematic, multilingual exploration of pomegranate science, art, and mythology."
+  },
+  "nav": {
+    "home": "Home",
+    "art": "Art",
+    "science": "Science",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "hero": {
+    "kicker": "Edition 01",
+    "title": "THE POMEGRANATE",
+    "subtitle": "The Fruit of Time.",
+    "cta": "Enter the Core"
+  },
+  "sections": {
+    "featureKicker": "Layers",
+    "featureTitle": "Layers of Wonder",
+    "featureSubtitle": "From mythology to molecular radiance.",
+    "scienceKicker": "Science",
+    "scienceTitle": "Science Highlights",
+    "scienceSubtitle": "Peer-reviewed extracts, elegantly summarized.",
+    "artKicker": "Gallery",
+    "artTitle": "Art Gallery Tease",
+    "artSubtitle": "Witness the pomegranate through modern mediums.",
+    "manifestoKicker": "Manifesto",
+    "manifestoTitle": "Every seed, a universe.",
+    "manifestoBody": "We honour the slow craft of nature with deliberate pacing, whisper-quiet typography, and cinematic transitions.",
+    "journalKicker": "Journal",
+    "journalTitle": "Notes from the Core",
+    "journalSubtitle": "Design logs, research digests, and studio reflections.",
+    "metricPolyphenols": "Polyphenol Lift",
+    "metricPolyphenolsDescription": "Up to 326% higher antioxidant capacity versus control beverages in peer studies.",
+    "metricAntioxidant": "Antioxidant Half-life",
+    "metricAntioxidantDescription": "18 hours of plasma support after timed extract intake.",
+    "metricStudies": "Studies Indexed",
+    "metricStudiesDescription": "Reviewed publications powering our knowledge base."
+  },
+  "featureCards": {
+    "punicalagin": {
+      "label": "Polyphenols",
+      "title": "Punicalagin Reservoirs",
+      "description": "Concentrated antioxidants orbit every seed, feeding the hero timeline."
+    },
+    "mythos": {
+      "label": "Mythic",
+      "title": "Myths Across Empires",
+      "description": "From Persephone to product keynotes, we honour the fruit’s ritual symbolism."
+    },
+    "chrono": {
+      "label": "Chrono",
+      "title": "Chrononutrition Precision",
+      "description": "ScrollTrigger aligns each reveal with circadian-inspired pacing."
+    }
+  },
+  "cta": {
+    "readScience": "Read the study",
+    "viewGallery": "View Gallery",
+    "readJournal": "Read journal"
+  },
+  "art": {
+    "metaTitle": "Art & Gallery",
+    "metaDescription": "A curated grid of AI, photography, and 3D studies of the pomegranate.",
+    "kicker": "Gallery",
+    "headline": "The Shape of the Pomegranate",
+    "lede": "Minimal thumbnails, buttery lightbox, headless-ready metadata.",
+    "filters": {
+      "all": "All",
+      "ai": "Shot on AI",
+      "photography": "Photography",
+      "threeD": "3D"
+    },
+    "lightbox": {
+      "open": "Open artwork",
+      "close": "Close lightbox",
+      "previous": "Previous artwork",
+      "next": "Next artwork"
+    }
+  },
+  "science": {
+    "metaLabel": "Science & Research",
+    "kicker": "Research",
+    "headline": "Science & Research",
+    "lede": "Chrononutrition, cardiovascular resilience, dermal defence — distilled with clarity.",
+    "references": "References",
+    "toc": "On this page",
+    "breadcrumbLabel": "Breadcrumb"
+  },
+  "blog": {
+    "metaTitle": "Journal",
+    "metaDescription": "Design logs, research digests, and launch notes from the core.",
+    "kicker": "Journal",
+    "headline": "Journal",
+    "lede": "Short-form reflections on craft, science, and product decisions.",
+    "shareLabel": "Share",
+    "backToList": "Back to journal"
+  },
+  "about": {
+    "metaTitle": "About — The Pomegranate",
+    "metaDescription": "Philosophy, credits, and licensing for The Pomegranate experience.",
+    "kicker": "About",
+    "headline": "Design as Ritual",
+    "lede": "The pomegranate is patient. Every pixel respects that tempo.",
+    "philosophyTitle": "Philosophy",
+    "philosophyBody1": "We blend Apple-style precision with slow storytelling to celebrate the fruit of time.",
+    "philosophyBody2": "Built headless-ready, the experience adapts to your content pipeline without breaking the spell.",
+    "experienceTitle": "Experience",
+    "experienceBody1": "Lenis glides the scroll, GSAP frames each section, Framer Motion breathes nuance.",
+    "experienceBullet1": "3D hero on react-three-fiber",
+    "experienceBullet2": "Sticky feature reveals inspired by product launches",
+    "experienceBullet3": "MDX-powered research and journal entries",
+    "accessibilityTitle": "Accessibility",
+    "accessibilityBody1": "Luxury should be inclusive. Landmarks, focus states, and reduced-motion fallbacks ship by default.",
+    "accessibilityBullet1": "Respects prefers-reduced-motion",
+    "accessibilityBullet2": "Descriptive alt text across imagery",
+    "accessibilityBullet3": "High-contrast typography",
+    "creditsTitle": "Credits",
+    "creditsBody": "A cross-disciplinary team stewards the experience:",
+    "creditCreativeDirector": "Creative Director",
+    "creditCreativeDirectorName": "Veli Akçay",
+    "creditScienceEditor": "Science Editor",
+    "creditScienceEditorName": "Dr. Leyla Karaman",
+    "credit3DLead": "3D Lead",
+    "credit3DLeadName": "Studio Nar",
+    "licensingTitle": "Licensing",
+    "licensingBody1": "Code licensed MIT, demo content under CC BY-NC 4.0.",
+    "licensingBody2": "Replace placeholders with production-ready imagery and copy.",
+    "nextTitle": "Next",
+    "nextBody": "Swap in your data, connect a CMS, or deploy to Vercel to make it yours."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "language": "Language",
+    "languageShort": "Lang",
+    "follow": "Follow us"
+  },
+  "notFound": {
+    "kicker": "404",
+    "headline": "This page hasn’t ripened yet.",
+    "body": "The seed you’re looking for is elsewhere. Return to the core to continue exploring.",
+    "cta": "Back home"
+  }
+}

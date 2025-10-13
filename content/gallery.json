@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "src": "/images/gallery-01.jpg",
+      "title": "Hemispheres in Glass",
+      "alt": "An ethereal pomegranate sliced in half floating inside a glass cube with soft lighting.",
+      "category": "ai",
+      "credits": "Shot on AI — Diffuse 2.0"
+    },
+    {
+      "src": "/images/gallery-02.jpg",
+      "title": "Seed Nebula",
+      "alt": "Close-up macro of glistening pomegranate seeds arranged like a cosmic cluster.",
+      "category": "photography",
+      "credits": "Photography — Elif Kaya"
+    },
+    {
+      "src": "/images/gallery-03.jpg",
+      "title": "Chrono Bloom",
+      "alt": "3D rendered pomegranate unfolding with clockwork mechanics underneath the rind.",
+      "category": "threeD",
+      "credits": "3D Model — Studio Nar"
+    },
+    {
+      "src": "/images/placeholder-thumb.jpg",
+      "title": "Luminous Peel Study",
+      "alt": "Minimalist illustration of a pomegranate peel gradient fading into white.",
+      "category": "ai",
+      "credits": "Shot on AI — Midjourney"
+    },
+    {
+      "src": "/images/gallery-02.jpg",
+      "title": "Scarlet Pulse",
+      "alt": "Long exposure photograph capturing juice droplets suspended mid-air.",
+      "category": "photography",
+      "credits": "Photography — Elif Kaya"
+    },
+    {
+      "src": "/images/gallery-03.jpg",
+      "title": "Orbiting Arils",
+      "alt": "Circular arrangement of pomegranate seeds orbiting a glowing sphere in 3D.",
+      "category": "threeD",
+      "credits": "3D Model — Studio Nar"
+    }
+  ]
+}

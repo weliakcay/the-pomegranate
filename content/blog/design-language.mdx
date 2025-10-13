@@ -1,0 +1,23 @@
+---
+title: "Designing The Pomegranate Language"
+description: "Inside the typographic, chromatic, and interaction decisions that shaped the Apple-inspired polish."
+publishedAt: "2024-02-02"
+tags:
+  - design
+  - motion
+  - systems
+author: "Veli Akçay"
+references:
+  - label: "Human Interface Guidelines — Apple"
+    url: "https://developer.apple.com/design/human-interface-guidelines/"
+  - label: "Material & Light — Dieter Rams"
+    url: "https://www.vitsoe.com/gb/about/good-design"
+---
+
+The first gesture of _The Pomegranate_ was restraint. Pure white canvas, disciplined grids, and high-contrast typography mirror the minimalist reverence of Apple product launches. We built the layout with a twelve-column rhythm and preserved generous breathing room to allow the hero 3D object to become the focus.
+
+The color language leans on a pomegranate's deep nar red—`#8B0014`—paired with muted charcoal inks. Gradients are rare and deployed only when the narrative demands a sense of depth; consider them the shimmer of light across a polished shell.
+
+Motion follows the same philosophy. We use Lenis for buttery traversal, GSAP ScrollTrigger for scene choreography, and Framer Motion for responsive micro-interactions. Each timeline runs in its own scope, easing out before the next experience begins, preventing scroll fatigue.
+
+Motherboard-level detail extends into accessibility: every motion sequence checks `prefers-reduced-motion`, alt texts articulate visual meaning, and focus states are bold enough for keyboard explorers. Luxury is never at odds with inclusivity.

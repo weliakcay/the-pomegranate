@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Nar — Zamanın Meyvesi",
+    "description": "Narın bilim, sanat ve mitolojisini sinematik ve çok dilli bir yolculukta keşfedin."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "art": "Sanat",
+    "science": "Bilim",
+    "blog": "Günlük",
+    "about": "Hakkında"
+  },
+  "hero": {
+    "kicker": "Sürüm 01",
+    "title": "THE POMEGRANATE",
+    "subtitle": "Zamanın meyvesi.",
+    "cta": "Çekirdeğe gir"
+  },
+  "sections": {
+    "featureKicker": "Katmanlar",
+    "featureTitle": "Hayranlık katmanları",
+    "featureSubtitle": "Mitolojiden moleküler ışıltıya.",
+    "scienceKicker": "Bilim",
+    "scienceTitle": "Bilimsel öne çıkanlar",
+    "scienceSubtitle": "Hakemli içerikler, minimal düzen.",
+    "artKicker": "Galeri",
+    "artTitle": "Galeri ön izlemesi",
+    "artSubtitle": "Narı çağdaş medyada izle.",
+    "manifestoKicker": "Manifesto",
+    "manifestoTitle": "Her çekirdek, bir evren.",
+    "manifestoBody": "Doğanın sabrını, dingin tipografi ve sinematik geçişlerle onurlandırıyoruz.",
+    "journalKicker": "Günlük",
+    "journalTitle": "Çekirdek notları",
+    "journalSubtitle": "Tasarım günlükleri, araştırma özetleri ve stüdyo düşünceleri.",
+    "metricPolyphenols": "Polifenol artışı",
+    "metricPolyphenolsDescription": "Kontrol içeceklerine göre %326’ya varan antioksidan kapasitesi.",
+    "metricAntioxidant": "Antioksidan yarı ömrü",
+    "metricAntioxidantDescription": "Zamanlamalı alımdan sonra 18 saatlik plazma desteği.",
+    "metricStudies": "Çalışma sayısı",
+    "metricStudiesDescription": "Bilgi tabanımızı besleyen hakemli yayınlar."
+  },
+  "featureCards": {
+    "punicalagin": {
+      "label": "Polifenoller",
+      "title": "Punicalagin rezervleri",
+      "description": "Yoğun antioksidanlar her çekirdeğin etrafında dönerek kahraman zaman çizelgesine güç verir."
+    },
+    "mythos": {
+      "label": "Mitoloji",
+      "title": "İmparatorluklar arası mitler",
+      "description": "Pers’ten Apple lansmanlarına kadar meyvenin ritüel sembolizmini saygıyla çerçeveliyoruz."
+    },
+    "chrono": {
+      "label": "Krono",
+      "title": "Krononütrisyon hassasiyeti",
+      "description": "ScrollTrigger, sirkadiyen ritimden ilham alan bir tempoyla bölümleri senkronlar."
+    }
+  },
+  "cta": {
+    "readScience": "Çalışmayı oku",
+    "viewGallery": "Galeriyi gör",
+    "readJournal": "Günlüğü oku"
+  },
+  "art": {
+    "metaTitle": "Sanat ve Galeri",
+    "metaDescription": "Yapay zeka, fotoğraf ve 3D nar çalışmalarından seçkiler.",
+    "kicker": "Galeri",
+    "headline": "Narın formu",
+    "lede": "Minimal kareler, pürüzsüz lightbox ve headless hazır meta.",
+    "filters": {
+      "all": "Hepsi",
+      "ai": "Shot on AI",
+      "photography": "Fotoğraf",
+      "threeD": "3D"
+    },
+    "lightbox": {
+      "open": "Eseri aç",
+      "close": "Lightbox kapat",
+      "previous": "Önceki",
+      "next": "Sonraki"
+    }
+  },
+  "science": {
+    "metaLabel": "Bilim ve Araştırma",
+    "kicker": "Araştırma",
+    "headline": "Bilim ve Araştırma",
+    "lede": "Krononütrisyon, kardiyovasküler dayanıklılık ve dermal savunma başlıkları yalın biçimde sunulur.",
+    "references": "Kaynaklar",
+    "toc": "Bu sayfa",
+    "breadcrumbLabel": "Gezinti izi"
+  },
+  "blog": {
+    "metaTitle": "Günlük",
+    "metaDescription": "Tasarım notları, araştırma özetleri ve lansman kayıtları.",
+    "kicker": "Günlük",
+    "headline": "Günlük",
+    "lede": "Zanaat, bilim ve ürün kararlarına dair kısa düşünceler.",
+    "shareLabel": "Paylaş",
+    "backToList": "Günlüğe dön"
+  },
+  "about": {
+    "metaTitle": "Hakkında — The Pomegranate",
+    "metaDescription": "The Pomegranate’ın felsefesi, kredileri ve lisansları.",
+    "kicker": "Hakkında",
+    "headline": "Ritüel olarak tasarım",
+    "lede": "Nar sabırlıdır; deneyim de aynı ritmi izler.",
+    "philosophyTitle": "Felsefe",
+    "philosophyBody1": "Apple tarzı titizlik ile yavaş anlatıyı birleştiriyoruz.",
+    "philosophyBody2": "Headless mimari sayesinde içerikleri değiştirmek büyüyü bozmaz.",
+    "experienceTitle": "Deneyim",
+    "experienceBody1": "Lenis akıcı kaydırma, GSAP sahne koreografisi, Framer Motion mikro hareketler sunar.",
+    "experienceBullet1": "react-three-fiber ile 3D kahraman sahnesi",
+    "experienceBullet2": "Ürün lansmanı stilinde yapışkan bölümler",
+    "experienceBullet3": "MDX tabanlı bilim ve günlük içerikleri",
+    "accessibilityTitle": "Erişilebilirlik",
+    "accessibilityBody1": "Lüks içerik herkesi kapsar: landmark, odak durumları ve düşük hareket seçenekleri mevcut.",
+    "accessibilityBullet1": "prefers-reduced-motion desteği",
+    "accessibilityBullet2": "Tüm görseller için anlamlı alt metin",
+    "accessibilityBullet3": "Yüksek kontrastlı tipografi",
+    "creditsTitle": "Krediler",
+    "creditsBody": "Çapraz disiplinli ekip:",
+    "creditCreativeDirector": "Yaratıcı Yönetmen",
+    "creditCreativeDirectorName": "Veli Akçay",
+    "creditScienceEditor": "Bilim Editörü",
+    "creditScienceEditorName": "Dr. Leyla Karaman",
+    "credit3DLead": "3D Lideri",
+    "credit3DLeadName": "Studio Nar",
+    "licensingTitle": "Lisans",
+    "licensingBody1": "Kod MIT, demo içerik CC BY-NC 4.0.",
+    "licensingBody2": "Yerine koymak için kendi varlıklarınızı hazırlayın.",
+    "nextTitle": "Sıradaki",
+    "nextBody": "Kendi verinizi ekleyin, CMS'inizi bağlayın ve Vercel'e gönderin."
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "language": "Dil",
+    "languageShort": "Dil",
+    "follow": "Bizi takip et"
+  },
+  "notFound": {
+    "kicker": "404",
+    "headline": "Aradığın sayfa henüz olgunlaşmadı.",
+    "body": "Belki de içerik başka bir hasatta. Çekirdeğe geri dön.",
+    "cta": "Ana sayfaya dön"
+  }
+}

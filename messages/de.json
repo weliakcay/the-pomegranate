@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Der Granatapfel — Die Frucht der Zeit",
+    "description": "Ein cineastisches, mehrsprachiges Erlebnis aus Wissenschaft, Kunst und Mythologie."
+  },
+  "nav": {
+    "home": "Start",
+    "art": "Kunst",
+    "science": "Wissenschaft",
+    "blog": "Journal",
+    "about": "Über uns"
+  },
+  "hero": {
+    "kicker": "Edition 01",
+    "title": "THE POMEGRANATE",
+    "subtitle": "Die Frucht der Zeit.",
+    "cta": "Zum Kern"
+  },
+  "sections": {
+    "featureKicker": "Schichten",
+    "featureTitle": "Schichten voller Staunen",
+    "featureSubtitle": "Von Mythologie bis molekulare Strahlkraft.",
+    "scienceKicker": "Wissenschaft",
+    "scienceTitle": "Wissenschaftliche Höhepunkte",
+    "scienceSubtitle": "Peer-Review-Erkenntnisse minimalistisch kuratiert.",
+    "artKicker": "Galerie",
+    "artTitle": "Ein Blick in die Galerie",
+    "artSubtitle": "Der Granatapfel durch zeitgenössische Medien.",
+    "manifestoKicker": "Manifest",
+    "manifestoTitle": "Jeder Kern, ein Universum.",
+    "manifestoBody": "Wir ehren die langsame Hand der Natur und erzählen die Geschichte des Granatapfels in klaren, ruhigen Bewegungen.",
+    "journalKicker": "Journal",
+    "journalTitle": "Notizen aus dem Kern",
+    "journalSubtitle": "Updates zu Design, Forschung und Produktion.",
+    "metricPolyphenols": "Polyphenol-Anstieg",
+    "metricPolyphenolsDescription": "Punicalagin zeigen bis zu 326 % höhere antioxidative Aktivität im Vergleich zu grünen Tees.",
+    "metricAntioxidant": "Antioxidative Halbwertszeit",
+    "metricAntioxidantDescription": "18 Stunden Plasma-Kapazität nach einer Extrakt-Dosis in klinischen Studien.",
+    "metricStudies": "Studien",
+    "metricStudiesDescription": "Begutachtete Veröffentlichungen, die unsere Bibliothek speisen."
+  },
+  "featureCards": {
+    "punicalagin": {
+      "label": "Polyphenole",
+      "title": "Punicalagin-Reservoirs",
+      "description": "Konzentrierte Antioxidantien strömen durch die Kerne und treiben jede Szene des Scrolls an."
+    },
+    "mythos": {
+      "label": "Mythos",
+      "title": "Zeitlose Mythen",
+      "description": "Vom antiken Persien bis Cupertino: wir erzählen die Reise der Frucht mit ritueller Ruhe."
+    },
+    "chrono": {
+      "label": "Chrono",
+      "title": "Chrononutrition",
+      "description": "Timing ist alles. ScrollTrigger choreografiert die Abschnitte, wie es die innere Uhr fordert."
+    }
+  },
+  "cta": {
+    "readScience": "Studie lesen",
+    "viewGallery": "Galerie ansehen",
+    "readJournal": "Journal öffnen"
+  },
+  "art": {
+    "metaTitle": "Kunst & Galerie",
+    "metaDescription": "Eine kuratierte Galerie aus AI, Fotografie und 3D-Renderings des Granatapfels.",
+    "kicker": "Galerie",
+    "headline": "Die Form des Granatapfels",
+    "lede": "Minimalistische Thumbnails, Lightbox-Erlebnis und fein abgestimmte Filter.",
+    "filters": {
+      "all": "Alle",
+      "ai": "Shot on AI",
+      "photography": "Fotografie",
+      "threeD": "3D"
+    },
+    "lightbox": {
+      "open": "Bild öffnen",
+      "close": "Lightbox schließen",
+      "previous": "Vorheriges Bild",
+      "next": "Nächstes Bild"
+    }
+  },
+  "science": {
+    "metaLabel": "Wissenschaft & Forschung",
+    "kicker": "Forschung",
+    "headline": "Wissenschaft & Forschung",
+    "lede": "Chrononutrition, kardiovaskuläre Resilienz und Hautsynergien, sauber präsentiert.",
+    "references": "Quellen",
+    "toc": "Auf dieser Seite",
+    "breadcrumbLabel": "Brotkrumen"
+  },
+  "blog": {
+    "metaTitle": "Journal",
+    "metaDescription": "Notizen, Updates und Design-Logs aus dem Kern.",
+    "kicker": "Journal",
+    "headline": "Journal",
+    "lede": "Kurzform-Einträge zu Design-Entscheidungen, Forschung und Releases.",
+    "shareLabel": "Teilen",
+    "backToList": "Zurück zum Journal"
+  },
+  "about": {
+    "metaTitle": "Über — The Pomegranate",
+    "metaDescription": "Philosophie, Credits und Lizenzen von The Pomegranate.",
+    "kicker": "Über",
+    "headline": "Design als Ritual",
+    "lede": "Der Granatapfel steht für Zeit, Geduld und Layer. Unsere digitale Bühne respektiert das.",
+    "philosophyTitle": "Philosophie",
+    "philosophyBody1": "The Pomegranate kombiniert Apple-inspirierte Ruhe mit wissenschaftlicher Präzision.",
+    "philosophyBody2": "Wir entwerfen für Headless-Systeme, damit Marken die Seele anpassen können, ohne Code zu brechen.",
+    "experienceTitle": "Erlebnis",
+    "experienceBody1": "Lenis sorgt für weiche Reise, GSAP choreografiert Szenen, Framer Motion für feine Gesten.",
+    "experienceBullet1": "R3F-Hero mit Kamerafahrten",
+    "experienceBullet2": "Sticky Features im Produktstil",
+    "experienceBullet3": "MDX-Content-Pipeline",
+    "accessibilityTitle": "Barrierefreiheit",
+    "accessibilityBody1": "Skip-Links, Landmarken und starke Fokuszustände sind standard.",
+    "accessibilityBullet1": "Bewegungsreduktion respektiert `prefers-reduced-motion`.",
+    "accessibilityBullet2": "Alt-Texte und semantische Struktur beibehalten.",
+    "accessibilityBullet3": "Kontrast gemäß WCAG AA+.",
+    "creditsTitle": "Credits",
+    "creditsBody": "Ein interdisziplinäres Team orchestriert das Projekt:",
+    "creditCreativeDirector": "Creative Director",
+    "creditCreativeDirectorName": "Veli Akçay",
+    "creditScienceEditor": "Science Editor",
+    "creditScienceEditorName": "Dr. Leyla Karaman",
+    "credit3DLead": "3D Lead",
+    "credit3DLeadName": "Studio Nar",
+    "licensingTitle": "Lizenzierung",
+    "licensingBody1": "Code MIT, Inhalte CC BY-NC 4.0.",
+    "licensingBody2": "Austauschbare Assets liegen als Platzhalter bei.",
+    "nextTitle": "Nächste Schritte",
+    "nextBody": "Füttere das Erlebnis mit deinen eigenen Daten oder verbinde es mit deinem CMS."
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "language": "Sprache",
+    "languageShort": "Sprache",
+    "follow": "Folge uns"
+  },
+  "notFound": {
+    "kicker": "404",
+    "headline": "Die gesuchte Seite hat keine Kerne.",
+    "body": "Vielleicht liegt der Inhalt in einer anderen Ernte. Kehre zum Kern zurück.",
+    "cta": "Zur Startseite"
+  }
+}

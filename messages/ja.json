@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "ザ・ポメグラネイト — 時の果実",
+    "description": "ザクロの科学・アート・神話をシネマティックに巡る多言語体験。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "art": "アート",
+    "science": "サイエンス",
+    "blog": "ジャーナル",
+    "about": "概要"
+  },
+  "hero": {
+    "kicker": "エディション 01",
+    "title": "THE POMEGRANATE",
+    "subtitle": "時の果実。",
+    "cta": "核へ進む"
+  },
+  "sections": {
+    "featureKicker": "レイヤー",
+    "featureTitle": "驚きのレイヤー",
+    "featureSubtitle": "神話から分子の輝きまで。",
+    "scienceKicker": "サイエンス",
+    "scienceTitle": "サイエンス・ハイライト",
+    "scienceSubtitle": "査読済みデータをミニマルに要約。",
+    "artKicker": "ギャラリー",
+    "artTitle": "ギャラリー・ティーザー",
+    "artSubtitle": "現代メディアで描くザクロ。",
+    "manifestoKicker": "マニフェスト",
+    "manifestoTitle": "一粒一宇宙。",
+    "manifestoBody": "自然のゆっくりとした営みを敬い、静かな文字組と映画的な遷移で物語ります。",
+    "journalKicker": "ジャーナル",
+    "journalTitle": "核からのノート",
+    "journalSubtitle": "デザインログ、研究ダイジェスト、制作メモ。",
+    "metricPolyphenols": "ポリフェノール増加",
+    "metricPolyphenolsDescription": "対照飲料と比べて最大326%まで抗酸化能力が上昇した研究値。",
+    "metricAntioxidant": "抗酸化ハーフライフ",
+    "metricAntioxidantDescription": "タイミングを合わせた摂取で血中サポートが18時間持続。",
+    "metricStudies": "登録研究数",
+    "metricStudiesDescription": "ライブラリを支える査読済み論文。"
+  },
+  "featureCards": {
+    "punicalagin": {
+      "label": "ポリフェノール",
+      "title": "プニカラジンの貯蔵庫",
+      "description": "濃縮された抗酸化成分が種を周回し、ヒーロータイムラインを支えます。"
+    },
+    "mythos": {
+      "label": "神話",
+      "title": "帝国を越える神話",
+      "description": "ペルセポネからプロダクト・キーノートまで、儀式的な象徴性を敬います。"
+    },
+    "chrono": {
+      "label": "クロノ",
+      "title": "クロノニュートリション精度",
+      "description": "ScrollTriggerが概日時計に合わせて各セクションを演出します。"
+    }
+  },
+  "cta": {
+    "readScience": "研究を読む",
+    "viewGallery": "ギャラリーを見る",
+    "readJournal": "ジャーナルを読む"
+  },
+  "art": {
+    "metaTitle": "アート & ギャラリー",
+    "metaDescription": "AI・写真・3Dで描かれたザクロのキュレーション・ギャラリー。",
+    "kicker": "ギャラリー",
+    "headline": "ザクロのかたち",
+    "lede": "ミニマルなサムネイル、滑らかなライトボックス、ヘッドレス対応のメタデータ。",
+    "filters": {
+      "all": "すべて",
+      "ai": "Shot on AI",
+      "photography": "写真",
+      "threeD": "3D"
+    },
+    "lightbox": {
+      "open": "アートを開く",
+      "close": "ライトボックスを閉じる",
+      "previous": "前へ",
+      "next": "次へ"
+    }
+  },
+  "science": {
+    "metaLabel": "サイエンス & リサーチ",
+    "kicker": "リサーチ",
+    "headline": "サイエンス & リサーチ",
+    "lede": "クロノニュートリション、心血管レジリエンス、皮膚防御を明瞭にまとめました。",
+    "references": "参考文献",
+    "toc": "このページ",
+    "breadcrumbLabel": "パンくず"
+  },
+  "blog": {
+    "metaTitle": "ジャーナル",
+    "metaDescription": "デザインログ、研究ダイジェスト、ローンチノート。",
+    "kicker": "ジャーナル",
+    "headline": "ジャーナル",
+    "lede": "クラフトとサイエンス、プロダクト決定に関する短い記録。",
+    "shareLabel": "共有",
+    "backToList": "ジャーナル一覧へ"
+  },
+  "about": {
+    "metaTitle": "概要 — The Pomegranate",
+    "metaDescription": "The Pomegranate の理念、クレジット、ライセンス情報。",
+    "kicker": "概要",
+    "headline": "儀式としてのデザイン",
+    "lede": "ザクロは忍耐の象徴。体験もそのリズムに沿います。",
+    "philosophyTitle": "理念",
+    "philosophyBody1": "Appleスタイルの精度とゆっくりとした語りで時の果実を称えます。",
+    "philosophyBody2": "ヘッドレス対応により、コンテンツを差し替えても没入感が損なわれません。",
+    "experienceTitle": "体験設計",
+    "experienceBody1": "Lenis が滑るようなスクロールを提供し、GSAP がシーンを演出、Framer Motion が微細な動きを添えます。",
+    "experienceBullet1": "react-three-fiber の 3D ヒーロー",
+    "experienceBullet2": "プロダクト風のスティッキーフィーチャー",
+    "experienceBullet3": "MDX ベースの研究・ジャーナル記事",
+    "accessibilityTitle": "アクセシビリティ",
+    "accessibilityBody1": "贅沢さと包括性は両立します。ランドマーク、フォーカス、低モーションのフェイルオーバーを完備。",
+    "accessibilityBullet1": "prefers-reduced-motion に対応",
+    "accessibilityBullet2": "すべての画像に説明的な alt",
+    "accessibilityBullet3": "高コントラストなタイポグラフィ",
+    "creditsTitle": "クレジット",
+    "creditsBody": "多分野チームが体験を監修：",
+    "creditCreativeDirector": "クリエイティブディレクター",
+    "creditCreativeDirectorName": "Veli Akçay",
+    "creditScienceEditor": "サイエンスエディター",
+    "creditScienceEditorName": "Dr. Leyla Karaman",
+    "credit3DLead": "3D リード",
+    "credit3DLeadName": "Studio Nar",
+    "licensingTitle": "ライセンス",
+    "licensingBody1": "コードは MIT、デモコンテンツは CC BY-NC 4.0。",
+    "licensingBody2": "本番アセットに置き換えてください。",
+    "nextTitle": "次のステップ",
+    "nextBody": "CMS と接続し、アニメーションを調整して Vercel にデプロイしましょう。"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "language": "言語",
+    "languageShort": "言語",
+    "follow": "フォロー"
+  },
+  "notFound": {
+    "kicker": "404",
+    "headline": "そのページはまだ熟していません。",
+    "body": "探しているコンテンツは別の季節にあるかもしれません。核に戻ってください。",
+    "cta": "ホームへ戻る"
+  }
+}
