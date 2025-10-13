@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, createTranslator } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getMessages } from '@/lib/getMessages';
@@ -31,6 +32,8 @@ export default async function LocaleLayout({ children, params: { locale } }: Loc
   if (!locales.includes(locale)) {
     notFound();
   }
+
+  unstable_setRequestLocale(locale);
 
   const messages = await getMessages(locale);
 

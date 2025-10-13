@@ -1,11 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next-intl/link';
+import { Link } from '@/lib/navigation';
+
+import type { Locale } from '@/lib/i18n';
 
 type ArticleCardProps = {
   href: string;
-  locale: string;
+  locale: Locale;
   title: string;
   description: string;
   readingTime: string;

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 
 type GalleryItem = {
   src: string;
@@ -82,11 +83,13 @@ export default function GalleryGrid({ items, filters, ariaLabels }: GalleryGridP
               className="group flex flex-col overflow-hidden rounded-3xl border border-[var(--ink-dim)]/10 bg-white shadow-sm shadow-[var(--ink)]/5"
               aria-label={`${ariaLabels.open}: ${item.title}`}
             >
-              <img
+              <Image
                 src={item.src}
                 alt={item.alt}
-                loading="lazy"
+                width={640}
+                height={640}
                 className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+                sizes="(max-width: 1024px) 50vw, 320px"
               />
               <div className="flex-1 p-6 text-left">
                 <p className="text-xs uppercase tracking-[0.3em] text-[var(--ink-dim)]/80">
@@ -111,10 +114,14 @@ export default function GalleryGrid({ items, filters, ariaLabels }: GalleryGridP
             role="dialog"
           >
             <div className="relative max-h-[80vh] w-[min(90vw,960px)] overflow-hidden rounded-3xl bg-white">
-              <img
+              <Image
                 src={filtered[activeIndex].src}
                 alt={filtered[activeIndex].alt}
+                width={1280}
+                height={960}
                 className="max-h-[70vh] w-full object-contain"
+                sizes="100vw"
+                priority
               />
               <div className="flex items-center justify-between p-6">
                 <div>

@@ -14,6 +14,7 @@ yarn.lock
 .env.test.local
 .env.production.local
 .vercel/
+tsconfig.tsbuildinfo
 
 # logs
 npm-debug.log*

@@ -1,5 +1,6 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { createTranslator } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import Prose from '@/components/Prose';
 import { getMessages } from '@/lib/getMessages';
 import type { Locale } from '@/lib/i18n';
@@ -19,6 +20,8 @@ export async function generateMetadata({ params: { locale } }: AboutPageProps): 
 }
 
 export default async function AboutPage({ params: { locale } }: AboutPageProps) {
+  unstable_setRequestLocale(locale);
+
   const messages = await getMessages(locale);
   const t = createTranslator({ locale, messages, namespace: 'about' });
 

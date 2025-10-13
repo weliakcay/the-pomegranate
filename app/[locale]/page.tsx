@@ -1,6 +1,6 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import Image from 'next/image';
 import { createTranslator } from 'next-intl';
-import Link from 'next-intl/link';
 import Hero3D from '@/components/Hero3D';
 import StickyFeature from '@/components/StickyFeature';
 import MetricGrid from '@/components/MetricGrid';
@@ -8,6 +8,8 @@ import { getMessages } from '@/lib/getMessages';
 import { getBlogPosts, getScienceArticles } from '@/lib/mdx';
 import gallery from '@/content/gallery.json';
 import type { Locale } from '@/lib/i18n';
+import { Link } from '@/lib/navigation';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 type HomePageProps = {
   params: { locale: Locale };
@@ -30,6 +32,8 @@ export async function generateMetadata({ params: { locale } }: HomePageProps): P
 }
 
 export default async function HomePage({ params: { locale } }: HomePageProps) {
+  unstable_setRequestLocale(locale);
+
   const messages = await getMessages(locale);
   const heroTranslations = createTranslator({ locale, messages, namespace: 'hero' });
   const sectionTranslations = createTranslator({ locale, messages, namespace: 'sections' });
@@ -186,11 +190,13 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
                   key={item.src}
                   className="group relative w-[240px] shrink-0 overflow-hidden rounded-3xl border border-[var(--ink-dim)]/10 bg-white shadow-sm shadow-[var(--ink)]/5 transition-transform hover:-translate-y-2"
                 >
-                  <img
+                  <Image
                     src={item.src}
                     alt={item.alt}
-                    loading="lazy"
+                    width={480}
+                    height={480}
                     className="h-60 w-full object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+                    sizes="(max-width: 768px) 70vw, 240px"
                   />
                   <div className="p-4">
                     <p className="text-xs uppercase tracking-[0.3em] text-[var(--ink-dim)]/90">

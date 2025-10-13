@@ -1,9 +1,10 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { createTranslator } from 'next-intl';
 import GalleryGrid from '@/components/GalleryGrid';
 import gallery from '@/content/gallery.json';
 import { getMessages } from '@/lib/getMessages';
 import type { Locale } from '@/lib/i18n';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 type ArtPageProps = {
   params: { locale: Locale };
@@ -20,6 +21,8 @@ export async function generateMetadata({ params: { locale } }: ArtPageProps): Pr
 }
 
 export default async function ArtPage({ params: { locale } }: ArtPageProps) {
+  unstable_setRequestLocale(locale);
+
   const messages = await getMessages(locale);
   const t = createTranslator({ locale, messages, namespace: 'art' });
 

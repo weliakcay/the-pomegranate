@@ -2,19 +2,19 @@
 
 import { useTransition } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { usePathname, useRouter } from 'next-intl/client';
+import { usePathname, useRouter } from '@/lib/navigation';
 import clsx from 'clsx';
 
 export default function LangSwitcher() {
-  const locale = useLocale();
+  const locale = useLocale() as import('@/lib/i18n').Locale;
   const t = useTranslations('footer');
   const pathname = usePathname();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
 
-  const locales = ['en', 'tr', 'de', 'ja', 'es'];
+  const locales = ['en', 'tr', 'de', 'ja', 'es'] as const;
 
-  const handleSelect = (nextLocale: string) => {
+  const handleSelect = (nextLocale: import('@/lib/i18n').Locale) => {
     startTransition(() => {
       router.replace(pathname, { locale: nextLocale });
     });

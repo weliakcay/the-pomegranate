@@ -1,16 +1,17 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next-intl/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import LangSwitcher from './LangSwitcher';
 import clsx from 'clsx';
+import { Link } from '@/lib/navigation';
+import type { Locale } from '@/lib/i18n';
 
 const normalizePath = (path: string) => path.replace(/^\/[a-z]{2}(?=\/|$)/, '');
 
 export default function Header() {
-  const locale = useLocale();
+  const locale = useLocale() as Locale;
   const t = useTranslations('nav');
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);

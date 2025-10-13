@@ -1,6 +1,5 @@
 import path from 'path';
 import { promises as fs } from 'fs';
-import matter from 'gray-matter';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import type { ReactElement } from 'react';
 import remarkGfm from 'remark-gfm';
@@ -88,7 +87,6 @@ function calculateReadingTime(source: string): { readingTime: string; wordCount:
 
 async function compileMdx(type: 'science' | 'blog', slug: string): Promise<MdxDocument> {
   const source = await readMdxFile(type, slug);
-  const { data } = matter(source);
   const { readingTime, wordCount } = calculateReadingTime(source);
 
   const compiled = await compileMDX<Frontmatter>({

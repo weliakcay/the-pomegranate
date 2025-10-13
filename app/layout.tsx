@@ -58,10 +58,11 @@ export const metadata: Metadata = {
       'An Apple-style, production-grade digital playground dedicated to the pomegranate.',
     images: ['/og.png'],
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

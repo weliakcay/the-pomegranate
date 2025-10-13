@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef } from 'react';
 import type { InstancedMesh } from 'three';
-import { Object3D } from 'three';
+import { Object3D, SphereGeometry, MeshStandardMaterial } from 'three';
 
 const tempObject = new Object3D();
 
@@ -12,6 +12,11 @@ type SeedParticlesProps = {
 
 export default function SeedParticles({ count = 120 }: SeedParticlesProps) {
   const mesh = useRef<InstancedMesh>(null);
+  const geometry = useMemo(() => new SphereGeometry(1, 8, 8), []);
+  const material = useMemo(
+    () => new MeshStandardMaterial({ color: '#ae1230', roughness: 0.5, metalness: 0.1 }),
+    []
+  );
 
   const seeds = useMemo(
     () =>
@@ -37,10 +42,12 @@ export default function SeedParticles({ count = 120 }: SeedParticlesProps) {
     mesh.current.instanceMatrix.needsUpdate = true;
   }, [seeds]);
 
+  useEffect(() => () => {
+    geometry.dispose();
+    material.dispose();
+  }, [geometry, material]);
+
   return (
-    <instancedMesh ref={mesh} args={[undefined as any, undefined as any, count]}>
-      <sphereGeometry args={[1, 8, 8]} />
-      <meshStandardMaterial color="#ae1230" roughness={0.5} metalness={0.1} />
-    </instancedMesh>
+    <instancedMesh ref={mesh} args={[geometry, material, count]} />
   );
 }

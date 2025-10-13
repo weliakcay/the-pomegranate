@@ -1,10 +1,11 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { createTranslator } from 'next-intl';
-import Link from 'next-intl/link';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import Prose from '@/components/Prose';
 import { getMessages } from '@/lib/getMessages';
 import { getScienceArticle, getScienceArticles } from '@/lib/mdx';
 import { locales, type Locale } from '@/lib/i18n';
+import { Link } from '@/lib/navigation';
 
 type ScienceArticlePageProps = {
   params: { locale: Locale; slug: string };
@@ -44,6 +45,8 @@ export async function generateMetadata({
 export default async function ScienceArticlePage({
   params: { locale, slug },
 }: ScienceArticlePageProps) {
+  unstable_setRequestLocale(locale);
+
   const { content, meta } = await getScienceArticle(slug);
   const messages = await getMessages(locale);
   const t = createTranslator({ locale, messages, namespace: 'science' });

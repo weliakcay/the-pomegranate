@@ -1,5 +1,6 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { createTranslator } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import ArticleCard from '@/components/ArticleCard';
 import { getMessages } from '@/lib/getMessages';
 import { getBlogPosts } from '@/lib/mdx';
@@ -20,6 +21,8 @@ export async function generateMetadata({ params: { locale } }: BlogPageProps): P
 }
 
 export default async function BlogPage({ params: { locale } }: BlogPageProps) {
+  unstable_setRequestLocale(locale);
+
   const messages = await getMessages(locale);
   const t = createTranslator({ locale, messages, namespace: 'blog' });
 

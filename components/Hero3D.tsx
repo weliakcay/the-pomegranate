@@ -1,16 +1,21 @@
 'use client';
 
-import { Suspense, useEffect, useRef, useState } from 'react';
+import { Suspense, useEffect, useRef, useState, type ComponentType } from 'react';
 import dynamic from 'next/dynamic';
 import { Canvas, useThree } from '@react-three/fiber';
 import { Environment, Html } from '@react-three/drei';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import * as THREE from 'three';
 import PomegranateModel from './PomegranateModel';
 import SeedParticles from './SeedParticles';
 import lottieData from '@/data/lottie/pomegranate.json';
+import type { LottieComponentProps } from 'lottie-react';
 
-const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
+const Lottie = dynamic(
+  () => import('lottie-react').then((mod) => mod.default),
+  { ssr: false }
+) as ComponentType<LottieComponentProps>;
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,15 +66,17 @@ export default function Hero3D({ title, subtitle, kicker, ctaLabel, ctaHref }: H
       return;
     }
 
+    const container = containerRef.current;
+
     const ctx = gsap.context(() => {
       const timeline = gsap.timeline({
         defaults: { ease: 'power2.out' },
         scrollTrigger: {
-          trigger: containerRef.current,
+          trigger: container,
           start: 'top top',
           end: '+=200%',
           scrub: true,
-          pin: containerRef.current.querySelector('.hero-stage'),
+          pin: container.querySelector('.hero-stage'),
         },
       });
 

@@ -21,7 +21,6 @@ export default function ScrollWrapper({ children }: ScrollWrapperProps) {
     const lenis = new Lenis({
       duration: 1.2,
       smoothWheel: true,
-      smoothTouch: false,
     });
 
     let frame: number;

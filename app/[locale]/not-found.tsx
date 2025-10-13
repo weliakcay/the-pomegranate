@@ -1,11 +1,12 @@
 'use client';
 
-import Link from 'next-intl/link';
 import { useTranslations, useLocale } from 'next-intl';
+import { Link } from '@/lib/navigation';
+import type { Locale } from '@/lib/i18n';
 
 export default function LocaleNotFound() {
   const t = useTranslations('notFound');
-  const locale = useLocale();
+  const locale = useLocale() as Locale;
 
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center px-6 py-24 text-center sm:px-10">
