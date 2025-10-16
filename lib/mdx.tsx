@@ -1,7 +1,7 @@
 import path from 'path';
 import { promises as fs } from 'fs';
 import { compileMDX } from 'next-mdx-remote/rsc';
-import type { ReactElement } from 'react';
+import React, { type ReactElement } from 'react';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
@@ -40,30 +40,36 @@ type Frontmatter = {
 };
 
 const mdxComponents = {
-  h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h2
-      className="mt-16 scroll-mt-24 font-display text-3xl leading-tight"
-      {...props}
-    />
-  ),
-  h3: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h3 className="mt-10 scroll-mt-24 font-display text-2xl" {...props} />
-  ),
-  p: (props: React.HTMLAttributes<HTMLParagraphElement>) => (
-    <p className="text-base leading-relaxed text-[var(--ink-dim)]" {...props} />
-  ),
-  ul: (props: React.HTMLAttributes<HTMLUListElement>) => (
-    <ul className="list-disc pl-6 text-[var(--ink-dim)]" {...props} />
-  ),
-  ol: (props: React.HTMLAttributes<HTMLOListElement>) => (
-    <ol className="list-decimal pl-6 text-[var(--ink-dim)]" {...props} />
-  ),
-  blockquote: (props: React.HTMLAttributes<HTMLQuoteElement>) => (
-    <blockquote
-      className="border-l-4 border-[var(--nar)]/40 pl-4 italic text-[var(--ink)]"
-      {...props}
-    />
-  ),
+  h2: (props: React.HTMLAttributes<HTMLHeadingElement>) =>
+    React.createElement('h2', {
+      className: 'mt-16 scroll-mt-24 font-display text-3xl leading-tight',
+      ...props,
+    }),
+  h3: (props: React.HTMLAttributes<HTMLHeadingElement>) =>
+    React.createElement('h3', {
+      className: 'mt-10 scroll-mt-24 font-display text-2xl',
+      ...props,
+    }),
+  p: (props: React.HTMLAttributes<HTMLParagraphElement>) =>
+    React.createElement('p', {
+      className: 'text-base leading-relaxed text-[var(--ink-dim)]',
+      ...props,
+    }),
+  ul: (props: React.HTMLAttributes<HTMLUListElement>) =>
+    React.createElement('ul', {
+      className: 'list-disc pl-6 text-[var(--ink-dim)]',
+      ...props,
+    }),
+  ol: (props: React.HTMLAttributes<HTMLOListElement>) =>
+    React.createElement('ol', {
+      className: 'list-decimal pl-6 text-[var(--ink-dim)]',
+      ...props,
+    }),
+  blockquote: (props: React.HTMLAttributes<HTMLQuoteElement>) =>
+    React.createElement('blockquote', {
+      className: 'border-l-4 border-[var(--nar)]/40 pl-4 italic text-[var(--ink)]',
+      ...props,
+    }),
 };
 
 function mdxDir(type: 'science' | 'blog') {
