@@ -53,16 +53,18 @@ export default function Hero3D({ title, subtitle, kicker, ctaLabel, ctaHref }: H
   const containerRef = useRef<HTMLDivElement>(null);
   const modelRef = useRef<THREE.Group>(null);
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
-  const [webglAvailable, setWebglAvailable] = useState(true);
-  const [reduceMotion, setReduceMotion] = useState(false);
+  const [webglAvailable, setWebglAvailable] = useState(false);
+  const [reduceMotion, setReduceMotion] = useState(true);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     setWebglAvailable(hasWebGLSupport());
     setReduceMotion(detectReducedMotion());
   }, []);
 
   useEffect(() => {
-    if (!containerRef.current || reduceMotion || !webglAvailable) {
+    if (!containerRef.current || reduceMotion || !webglAvailable || !isClient) {
       return;
     }
 
@@ -117,7 +119,7 @@ export default function Hero3D({ title, subtitle, kicker, ctaLabel, ctaHref }: H
     return () => {
       ctx.revert();
     };
-  }, [reduceMotion, webglAvailable]);
+  }, [reduceMotion, webglAvailable, isClient]);
 
   return (
     <section
@@ -127,7 +129,7 @@ export default function Hero3D({ title, subtitle, kicker, ctaLabel, ctaHref }: H
     >
       <div className="hero-stage sticky top-0 flex h-screen w-full items-center justify-center">
         <div className="absolute inset-0">
-          {webglAvailable && !reduceMotion ? (
+          {isClient && webglAvailable && !reduceMotion ? (
             <Canvas camera={{ position: [0, 0, 3.2], fov: 45 }} dpr={[1, 1.8]}>
               <Suspense fallback={<Html center>Loading…</Html>}>
                 <color attach="background" args={['#ffffff']} />
@@ -141,7 +143,7 @@ export default function Hero3D({ title, subtitle, kicker, ctaLabel, ctaHref }: H
             </Canvas>
           ) : (
             <div className="flex h-full items-center justify-center bg-gradient-to-b from-white via-rose-50/40 to-white">
-              <Lottie animationData={lottieData} loop autoplay className="w-3/4 max-w-xl" />
+              {isClient && <Lottie animationData={lottieData} loop autoplay className="w-3/4 max-w-xl" />}
             </div>
           )}
         </div>

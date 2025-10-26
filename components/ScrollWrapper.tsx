@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, useEffect } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import Lenis from 'lenis';
 
 type ScrollWrapperProps = {
@@ -8,8 +8,14 @@ type ScrollWrapperProps = {
 };
 
 export default function ScrollWrapper({ children }: ScrollWrapperProps) {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient || typeof window === 'undefined') return;
 
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     if (mediaQuery.matches) {
@@ -18,23 +24,31 @@ export default function ScrollWrapper({ children }: ScrollWrapperProps) {
     }
 
     document.documentElement.dataset.reducedMotion = 'false';
-    const lenis = new Lenis({
-      duration: 1.2,
-      smoothWheel: true,
-    });
 
+    let lenis: Lenis | null = null;
     let frame: number;
-    const raf = (time: number) => {
-      lenis.raf(time);
+
+    try {
+      lenis = new Lenis({
+        duration: 1.2,
+        smoothWheel: true,
+        syncTouch: false,
+      });
+
+      const raf = (time: number) => {
+        lenis?.raf(time);
+        frame = requestAnimationFrame(raf);
+      };
       frame = requestAnimationFrame(raf);
-    };
-    frame = requestAnimationFrame(raf);
+    } catch (error) {
+      console.warn('Lenis initialization failed:', error);
+    }
 
     return () => {
-      cancelAnimationFrame(frame);
-      lenis.destroy();
+      if (frame) cancelAnimationFrame(frame);
+      lenis?.destroy();
     };
-  }, []);
+  }, [isClient]);
 
   return <>{children}</>;
 }
